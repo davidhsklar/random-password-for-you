@@ -51,13 +51,13 @@ while (selectedUppercase === true && selectedLowercase === true && selectedNumbe
 window.alert(" Please select at least one character type.");
 
 // upper case
-var selectedUppercase = window.confirm(" Would you like to include uppercase characters? ");
+var selectedUppercase = window.confirm(" Would you like to include uppercase characters?  Press Ok for Yes and Cancel for no. ");
 // lower case
-var selectedLowercase = window.confirm(" Would you like to include lowercase characters? ");
+var selectedLowercase = window.confirm(" Would you like to include lowercase characters? Press Ok for Yes and Cancel for no. ");
 // numbers
-var selectedNumbers = window.confirm(" Would you like to include numbers? ");
+var selectedNumbers = window.confirm(" Would you like to include numbers? Press Ok for Yes and Cancel for no. ");
 // special characters
-var selectedSpecial = window.confirm(" Would you like to include special characters? ");
+var selectedSpecial = window.confirm(" Would you like to include special characters? Press Ok for Yes and Cancel for no. ");
 break;
 }
 
