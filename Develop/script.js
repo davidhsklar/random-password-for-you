@@ -21,22 +21,22 @@ var generatePassword = function() {
 
    // length of password
 
-   var passLengthFinal = function () {
-    var passLength = (window.prompt("Please specify the number of characters preferred for your password between 8 and 128"));
+   var passwordLengthFinal = function () {
+    var passwordLength = (window.prompt("Please specify the number of characters preferred for your password between 8 and 128"));
 
-    if (passLength < 8 || passLength > 128) {
+    if (passwordLength < 8 || passwordLength > 128) {
       alert("Please enter a number between 8 and 128");
-      return passLengthFinal();
+      return passwordLengthFinal();
     } else {
-      return passLength;
+      return passwordLength;
     }
     
   }
   
   // converting password length into function to be called back later
 
-  var passLengthActual = passLengthFinal();
-  window.alert(" You have selected " + passLengthActual + " characters! ")
+  var passwordLengthActual = passwordLengthFinal();
+  window.alert(" You have selected " + passwordLengthActual + " characters! ")
   
 
 // password criteria set-up.  set the variables first
@@ -92,7 +92,7 @@ console.log(selectedCharacters)
 // character generation loop
 
 var result = "";
-    for (var i = 0; i <= passLengthActual - 1; i++) {
+    for (var i = 0; i <= passwordLengthActual - 1; i++) {
       result += selectedCharacters.charAt(Math.floor(Math.random() * selectedCharacters.length));
     }
 
