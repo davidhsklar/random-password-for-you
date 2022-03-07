@@ -96,7 +96,7 @@ var result = "";
       result += selectedCharacters.charAt(Math.floor(Math.random() * selectedCharacters.length));
     }
 
-    alert(result);
+    alert(" Thank you for using the password generator! Your password is " + result);
     console.log(result);
 
   var finalPassword = result;
